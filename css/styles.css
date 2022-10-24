@@ -26,6 +26,7 @@ header {
   border-bottom: 1px solid #ececec;
   justify-content: space-between;
 }
+
 .header-nav {
   display: flex;
   margin: 24px 227px 25px 215px;
@@ -43,6 +44,10 @@ header {
   list-style: none;
   padding: 0;
 }
+.transion{
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)
+} 
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -51,7 +56,6 @@ header {
   font-weight: 700;
   flex-grow: 1;
 }
-
 a {
   text-decoration: none;
   color: black;
@@ -59,15 +63,13 @@ a {
 .adress-item {
   display: flex;
   align-items: center;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .icon {
   fill: #757575;
   margin-right: 10px;
   cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 .icon:hover {
   fill: #03a9f4;
@@ -77,8 +79,6 @@ a {
   font-weight: 500;
   font-size: 14px;
   color: #212121;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-item a:hover {
   color: var(--brand-color);
@@ -132,8 +132,6 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
   color: #ffffff;
@@ -207,11 +205,13 @@ a {
 .cards:last-child {
   margin-right: 0;
 }
+
 .cline {
   display: flex;
   list-style: none;
   padding-inline: 15px;
   margin: 0;
+  
 }
 .cline li {
   margin-right: 30px;
@@ -223,6 +223,10 @@ a {
   padding-top: 18px;
   width: 170px;
   height: 92px;
+}
+.icon-box:hover{
+  border: 1px solid #2196F3;
+
 }
 .cline li:last-child {
   margin-right: 0;

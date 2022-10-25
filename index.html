@@ -23,7 +23,7 @@
         </div>
 
         <ul class="header-menu">
-          <li class="menu-item transion">
+          <li class="menu-item transion active-bottom">
             <a href="/agencja"><span>Agencja</span></a>
           </li>
           <li class="menu-item transion">
@@ -58,7 +58,7 @@
           <h1 class="banner-titel">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
-          <button class="button transion" type="button">Zamów usługe</button>
+          <button class="button transion" type="button" data-modal-open>Zamów usługe</button>
         </div>
       </div>
 
@@ -384,5 +384,14 @@
         </div>
       </div>
     </footer>
+
+    <div  class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close="">X</button>
+
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>

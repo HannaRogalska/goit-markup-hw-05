@@ -495,18 +495,17 @@ footer {
   background-color: #f5f4fa;
   cursor: pointer;
 }
+
 .portfolio-main-cards {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
   padding: 0;
-  padding: 0px 15px 94px 15px;
   margin: 0;
 }
 
 .card {
   list-style: none;
-  margin-right: 30px;
-  margin-bottom: 30px;
   max-width: 370px;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
@@ -515,19 +514,6 @@ footer {
   position: relative;
   overflow: hidden;
 }
-
-.card:last-child,
-.card:nth-child(3),
-.card:nth-child(6) {
-  margin-right: 0;
-}
-
-.card:nth-child(7),
-.card:nth-child(8),
-.card:nth-child(9) {
-  margin-bottom: 0;
-}
-
 .card-hidden {
   position: absolute;
   width: 100%;
